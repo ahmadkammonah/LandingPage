@@ -1,8 +1,6 @@
 # Personal Portfolio Landing Page
 
-A modern, responsive portfolio website showcasing my skills and projects as a SCADA Engineer and developer.
-
-![Portfolio Preview](preview.png)
+A portfolio website showcasing my skills and projects as a SCADA Engineer and on-the-side developer.
 
 ## Technologies Used
 
