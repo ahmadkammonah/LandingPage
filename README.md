@@ -2,7 +2,7 @@
 
 A portfolio website showcasing my skills and projects as a SCADA Engineer and on-the-side developer.
 
-View website here [https://ahmadkammonah.com/]
+View website at [https://ahmadkammonah.com/](https://ahmadkammonah.com/) or at [https://ahmadkammonah.github.io/LandingPage/](https://ahmadkammonah.github.io/LandingPage/)
 
 ## Technologies Used
 
