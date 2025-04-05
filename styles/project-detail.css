@@ -1,0 +1,295 @@
+/* Project Detail Specific Styles *//* Variables */
+:root {
+    --primary: #2563eb;
+    --secondary: #7c3aed;
+    --dark: #1e293b;
+    --light: #f8fafc;
+    --accent: #06b6d4;
+    --transition: all 0.3s ease;
+}
+
+/* Project Hero Section */
+.project-hero {
+    background: linear-gradient(to right, var(--primary), var(--secondary));
+    background-size: cover;
+    background-position: center;
+    color: var(--light);
+    padding: 7rem 0rem 1rem;
+    text-align: center;
+}
+
+.project-hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.project-hero .project-title {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.project-hero .tech-stack {
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.project-hero .tech-tag {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: var(--light);
+    font-size: 0.9rem;
+    padding: 0.4rem 1rem;
+}
+
+/* Project Overview */
+.project-overview {
+    padding: 5rem 2rem;
+}
+
+.project-overview-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.project-image-container {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.project-detail-img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+}
+
+.project-detail-img:hover {
+    transform: scale(1.03);
+}
+
+.project-info h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    display: inline-block;
+}
+
+.project-info h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background: linear-gradient(to right, var(--primary), var(--secondary));
+}
+
+.project-info p {
+    color: #64748b;
+    margin-bottom: 1.5rem;
+}
+
+.project-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.primary-btn {
+    background: linear-gradient(to right, var(--primary), var(--secondary));
+    color: white;
+}
+
+.secondary-btn {
+    background-color: white;
+    color: var(--dark);
+    border: 1px solid #e2e8f0;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Project Features */
+.project-features {
+    background-color: #f1f5f9;
+    padding: 5rem 2rem;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.feature-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: var(--transition);
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+    font-size: 2rem;
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+}
+
+.feature-card h3 {
+    margin-bottom: 1rem;
+}
+
+.feature-card p {
+    color: #64748b;
+}
+
+
+/* Project Gallery */
+.project-gallery {
+    background-color: var(--light);
+    padding: 5rem 2rem;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.gallery-item {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: var(--transition);
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+.gallery-item video {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.gallery-item:hover video {
+    transform: scale(1.05);
+}
+
+/* Make sure video controls don't break the hover effect */
+.gallery-item video::-webkit-media-controls {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 0 0 12px 12px;
+}
+
+.gallery-item video::-webkit-media-controls-panel {
+    padding: 0 10px;
+}
+
+/* Next Project */
+.next-project {
+    background-color: #f1f5f9;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.next-project-link {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.next-project-link a {
+    display: block;
+    padding: 3rem;
+    border-radius: 12px;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./images/PlaceHolder2.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    transition: var(--transition);
+}
+
+.next-project-link a:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.next-project-link span {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    opacity: 0.7;
+}
+
+.next-project-link h3 {
+    font-size: 1.5rem;
+    margin: 0.5rem 0 1rem;
+}
+
+.next-project-link i {
+    font-size: 1.5rem;
+}
+
+
+/* Responsive adjustments */
+@media screen and (max-width: 968px) {
+    .project-overview-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .project-image-container {
+        margin-bottom: 2rem;
+    }
+    
+    .development-timeline::before {
+        left: 14px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .project-hero .project-title {
+        font-size: 2.2rem;
+    }
+    
+    .project-links {
+        flex-direction: column;
+    }
+    
+    .btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
