@@ -60,3 +60,5 @@ const checkVisibility = () => {
 // Check visibility on load and scroll
 window.addEventListener('load', checkVisibility);
 window.addEventListener('scroll', checkVisibility);
+
+// YO WHAT ARE YOU DOING HERE? THIS IS SECRET CODE!
