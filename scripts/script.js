@@ -60,25 +60,3 @@ const checkVisibility = () => {
 // Check visibility on load and scroll
 window.addEventListener('load', checkVisibility);
 window.addEventListener('scroll', checkVisibility);
-
-// Form submission handling
-const contactForm = document.querySelector('.contact-form');
-
-contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    
-    // Get form values
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const message = document.getElementById('message').value;
-    
-    // Here you would typically send the form data to a server
-    // For demo purposes, we'll just log it
-    console.log({ name, email, message });
-    
-    // Reset form
-    contactForm.reset();
-    
-    // Show success message (in a real implementation)
-    alert('Thanks for your message! I\'ll get back to you soon.');
-});

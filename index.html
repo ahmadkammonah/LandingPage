@@ -130,22 +130,29 @@
                 </div>
             </div>
             
-            <form class="contact-form animated">
+            <form class="contact-form animated" action="https://api.web3forms.com/submit" method="POST">
+                
+                <input type="hidden" name="access_key" value="6336cbc0-26c0-4490-be55-fe7ed566fd5b">
+
                 <div class="form-group">
                     <label for="name" class="form-label">Name</label>
-                    <input type="text" id="name" class="form-input" required>
+                    <input type="text" name="name" id="name" class="form-input" required>
                 </div>
                 
                 <div class="form-group">
                     <label for="email" class="form-label">Email</label>
-                    <input type="email" id="email" class="form-input" required>
+                    <input type="email" name="email" id="email" class="form-input" required>
                 </div>
                 
                 <div class="form-group">
                     <label for="message" class="form-label">Message</label>
-                    <textarea id="message" class="form-textarea" rows="5" required></textarea>
+                    <textarea name="message" id="message" class="form-textarea" rows="5" required></textarea>
                 </div>
                 
+                <!-- Honeypot Spam Protection -->
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                <input type="hidden" name="redirect" value="https://ahmadkammonah.com/pages/Thankyou.html">
+
                 <button type="submit" class="submit-btn">Send Message</button>
             </form>
         </div>
